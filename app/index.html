@@ -1,0 +1,283 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta property="og:title" content="THE HUNT - Killer Loop">
+        <meta property="og:url" content="http://thehunt.killerloop.com">
+        <meta property="og:site_name" content="THE HUNT">
+        <meta property="og:description" content="The hunt is on.">
+        <!-- <meta property="og:image" content="http://www.killerloop.com/skin/frontend/killerloop/default/images/killerloop.jpg"> -->
+        <meta property="og:image" content="http://thehunt.killerloop.com/fb-01.jpg">
+        <meta property="og:image" content="http://thehunt.killerloop.com/fb-02.jpg">
+        <meta property="og:image" content="http://thehunt.killerloop.com/fb-03.jpg">
+        <title>THE HUNT</title>
+        <meta name="description" content="CAPTURE THE EXTREME with Killer Loop">
+        <meta name="viewport" content="width=320">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/progress-polyfill.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <!-- endbuild -->
+
+        <!--[if gte IE 9]>
+          <style type="text/css">
+            .gradient {
+               filter: none;
+            }
+          </style>
+        <![endif]-->
+        
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+        
+        <!--[if lte IE 8]>
+            <link href="http://vjs.zencdn.net/4.1/video-js.css" rel="stylesheet">
+            <script src="http://vjs.zencdn.net/4.1/video.js"></script>
+        <![endif]-->
+
+        <!-- fallback video template -->
+        <script type="text" id="fallbackvideo">
+        <video id="kl_vid" class="video-js vjs-default-skin" controls preload="auto" poster="video-poster.jpg" > <source src="https://s3-eu-west-1.amazonaws.com/thehunt/kl-heroedit-26.11.mp4" type='video/mp4' /> <source src="https://s3-eu-west-1.amazonaws.com/thehunt/kl-heroedit-26.11.webm" type='video/webm' /> </video> </head>
+        </script>
+    <body>
+        <div class="container">
+            <h1><a href="http://www.killerloop.com"><img src="images/killerloop-logo.gif" alt="Killer Loop – Hunt The Moment" width="82" height="112"></a></h1>
+            
+            <section id="fsvid" class="videocontainer">
+                <p class="unsupported">Check out the <em>full interactive version</em> of The Hunt on your computer or tablet.<br>If you're using Internet Explorer 8, please try another browser.</p>
+                <div class="videoblock" id="videoblock">
+                    <!-- <div class="loadingbar">
+                        <div class="amtloaded"></div>
+                    </div> -->
+
+                    <div id="aperture" class="aperture-0"></div>
+                    <div class="aperture-1"></div>
+                    <div class="aperture-2"></div>
+                    <div class="aperture-3"></div>
+                    <div class="aperture-4"></div>
+                    <div class="aperture-5"></div>
+                    <div class="aperture-6"></div>
+                    <!-- <p>This experience is optmized for modern browsers etc. etc. etc.</p> -->
+
+                </div>
+                <div class="videoshare" id="videoshare">
+                    <div class="videosharecontainer">
+                        <h2 id="vidshareh2">&nbsp;</h2>
+                        <button class="replay vidsharebtn" id="replay">replay movie</button>
+                        <button class="replayjump vidsharebtn" id="replayjump"> replay jump</button>
+                        <div class="vidsharebtn">share 
+                           <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebooksharedialog', 'width=626,height=436'); return false;"><i class="fa fa-facebook"></i></a>
+                           <a onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('http://thehunt.killerloop.com')+'&text=Extreme conditions. Extreme angles. Extreme fur. ', 'twitter_share','height=240, width=480, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no');"><i class="fa fa-twitter"></i></a>
+                           <a href="https://plus.google.com/share?url=http://thehunt.killerloop.com" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-google-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <video id="kl_vid" preload="auto" poster="video-poster.jpg" allowfullscreen="true" height="400">
+                    <source src="https://s3-eu-west-1.amazonaws.com/thehunt/kl-interactive-26.11.mp4" type='video/mp4'>
+                    <source src="https://s3-eu-west-1.amazonaws.com/thehunt/kl-interactive-26.11.webm" type='video/webm'>
+                </video>
+                
+                
+
+
+                <video id="kl_making" class="kl_making hidden video-js vjs-default-skin" preload="auto" poster="video-poster.jpg" allowfullscreen="true" height="400" controls>
+                    <source src="https://s3-eu-west-1.amazonaws.com/thehunt/kl-makingof-26.11.mp4" type='video/mp4'>
+                    <source src="https://s3-eu-west-1.amazonaws.com/thehunt/kl-makingof-26.11.webm" type='video/webm'>
+                </video>
+                
+                <div class="scrubcontainer">
+                    <progress max="100" value="0" id="scrubber" class="scrubber"></progress><div class="fakebar"></div>
+                </div>
+
+
+                <nav>
+
+                    <h3>&nbsp;</h3>
+                    <h4>&nbsp;</h4>
+                    <ul>
+                        <li data-timecount="0" data-keycode="49" class="cam1 visuallyhidden">
+                            <button>1</button>
+                        </li>
+                        <li data-timecount="1" data-keycode="50" class="cam2 visuallyhidden">
+                            <button>2</button>
+                        </li>
+                        <li data-timecount="2" data-keycode="51" class="cam3 visuallyhidden">
+                            <button>3</button>
+                        </li>
+                        <li data-timecount="3" data-keycode="52" class="cam4 visuallyhidden">
+                            <button>4</button>
+                        </li>
+                        <li data-timecount="4" data-keycode="53" class="cam5 visuallyhidden">
+                            <button>5</button>
+                        </li>
+                        <li data-timecount="5" data-keycode="54" class="cam6 visuallyhidden">
+                            <button>6</button>
+                        </li>
+
+                        <!-- hidden Easter Eggs, not displayed but active for keyboard control -->
+                        <!-- 9 -->
+                        <li data-timecount="6" data-keycode="48" class="cam7 visuallyhidden egg">
+                            <button>7</button>
+                        </li>
+                        <!-- K -->
+                        <li data-timecount="7" data-keycode="75" class="cam8 visuallyhidden egg">
+                            <button>8</button>
+                        </li>
+                        <!-- L -->
+                        <li data-timecount="8" data-keycode="76" class="cam9 visuallyhidden egg">
+                            <button>9</button>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="controlbar">
+                    <button id="play" class="btn-play">
+                        <i class="fa fa-play"></i>
+                        <i class="fa fa-pause ahem"></i>
+                    </button>
+                    <button id="volume" class="btn-volume loudnoises">
+                        <i class="fa fa-volume-up"></i>
+                        <i class="fa fa-volume-off ahem"></i>
+                    </button>
+                    <span class="stopwatch" id="stopwatch">
+                        <span class="countup">0:00</span>
+                        <span class="steady"> / 2:15</span>
+                    </span>
+                    <button id="fs" class="btn-fs">
+                        <i class="fa fa-fullscreen"></i>
+                        <i class="fa fa-resize-small ahem"></i>
+                    </button>
+                    <p class="ms">milliseconds since start: <span>0</span></p>
+
+                    <div id="cbar-social" class="controlbar-social">
+                        <p>share the hunt</p>
+                        <ul>
+                            <li class="fb"><a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebooksharedialog', 'width=626,height=436'); return false;"><i class="fa fa-facebook"></i></a></li>
+                            <li class="tw"><a href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('http://thehunt.killerloop.com')+'&text=Extreme conditions. Extreme angles. Extreme fur. ', 'twitter_share','height=240, width=480, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no');"><i class="fa fa-twitter"></i></a></li>
+                            <li class="gplus"><a href="https://plus.google.com/share?url=http://thehunt.killerloop.com" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="support" class="supportcontainer gradient">
+                <div class="supportpadding">
+                    <span id="vidt-thehunt" class="vidt vidt-thehunt">
+                        <span class="overlay">The Hunt</span>
+                        <img class="active" src="images/x.gif">
+                    </span>
+
+                    <span id="vidt-makingof" class="vidt vidt-makingof">
+                        <span class="overlay">Making Of</span>
+                        <img src="images/x.gif">
+                    </span>
+                </div>
+
+            </section>
+
+            <section id="product" class="productcontainer">
+                <ul>
+                    <li class="extreme">
+                        <a href="http://www.killerloop.com/_/jacket-480.html" target="_blank"><img src="images/product/ex-yellow.png"></a>
+                        <a href="http://www.killerloop.com/_/heavy-jacket.html" target="_blank"><img src="images/product/ex-black.png"></a>
+                        <h5>extreme&nbsp;&nbsp;<span><a href="http://www.killerloop.com/_/man/collection/extreme.html">man</a><a href="http://www.killerloop.com/_/woman/collection/extreme.html">woman</a></span></h5>
+                        <p>Designed for the needs of the active outdoor professional whether they are a surf photographer, extreme film-maker or a ski heli-pilot.</p>
+                    </li>
+                    <li class="performance">
+                        <a href="http://www.killerloop.com/_/heavy-jacket-492.html" target="_blank"><img src="images/product/perf-blue.png"></a>
+                        <a href="http://www.killerloop.com/_/heavy-jacket-422.html" target="_blank"><img src="images/product/perf-green.png"></a>
+                        <h5>performance&nbsp;&nbsp;<span><a href="http://www.killerloop.com/_/man/collection/performance.html">man</a><a href="http://www.killerloop.com/_/woman/collection/performance.html">woman</a></span></h5>
+                        <p>When the environment requires a strong performance or just it promises an intense day of fun.</p>
+                    </li>
+                    <li class="functional">
+                        <a href="http://www.killerloop.com/_/jacket-446.html" target="_blank"><img src="images/product/func-green.png"></a>
+                        <a href="http://www.killerloop.com/_/jacket-431.html" target="_blank"><img src="images/product/func-white.png"></a>
+                        <h5>functional&nbsp;&nbsp;<span><a href="http://www.killerloop.com/_/man/collection/functional.html">man</a><a href="http://www.killerloop.com/_/woman/collection/functional.html">woman</a></span></h5>
+                        <p>Specifically made for everyday use.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <footer>
+                <ul class="footerlinks">
+                    <li class="about"><a href="http://www.killerloop.com/_/about-the-brand/">About the brand</a></li>
+                    <li class="capture"><a href="http://capturethextreme.tumblr.com/">Capture the extreme</a></li>
+                    <li class="follow">
+                        <ul class="followlinks">
+                            <li class="text">Follow Killer Loop</li>
+                            <li class="fb"><a href="https://www.facebook.com/killerloop" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="tw"><a href="https://twitter.com/killerloopbrand" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="gplus"><a href="https://plus.google.com/115481534178607400468/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                            <li class="vim"><a href="http://vimeo.com/channels/capturethextreme" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>
+                            <li class="yt"><a href="http://www.youtube.com/user/KillerLoopBrand" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                            <li class="rss"><a href="http://capturethextreme.tumblr.com/" target="_blank"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="base">
+                    <span class="copyright">© 2013 BENETTON GROUP</span>
+                    <span class="links">
+                        <a href="http://www.killerloop.com/_/privacy/">PRIVACY POLICY</a> | 
+                        <a href="http://www.killerloop.com/_/conditions-of-sale/">CONDITIONS OF SALE</a> | 
+                        <a href="http://www.killerloop.com/_/help/">HELP</a> | 
+                        <span title="triboo digitale s.r.l., legal offices in Milan, Viale Sarca 336, Edificio 16, Italy, shared capital euro 42.678,00 entirely paid in, REA MI 1901658, VAT code and Registry of Businesses of Milan number 02912880966 - company subject to management and coordination activity of the parent company Triboo SpA, legal offices in Milan, Viale Sarca 336, Edificio 16, Italy, shared capital euro 10.000.000,00 entirely paid in, REA MI 1907817, VAT code and Registry of Businesses of Milan number 02800840965">MANAGED BY TRIBOO DIGITALE S.R.L.</span> | 
+                        VAT N. 03490770264
+                    </span>
+                </div>
+            </footer>
+        </div>
+
+        <div class="ahem imgpreload">
+            <img src="images/vidt-makingof.jpg">
+            <img src="images/vidt-thehunt.jpg">
+        </div>
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script type="text/javascript">
+            var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-10692049-13']); _gaq.push(['_setDomainName', 'killerloop.com']); _gaq.push(['_setAllowLinker', true]); _gaq.push(['_trackPageview']); (function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); 
+        </script>
+
+        
+
+        <!-- build:js scripts/main.js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="scripts/vendor/screenfull.js"></script>
+        <script src="scripts/vendor/popcorn-build.js"></script>
+        <script src="scripts/vendor/progress-polyfill.js"></script>
+        <script src="scripts/plugins.js"></script>
+        <script src="scripts/utilities.js"></script>
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+
+        <script>
+            $(function() {
+                KL.Global.init();
+            });
+
+            //hax
+            // var $nav = $('nav'),
+            //     $navli = $nav.find('li'),
+            //     $stopwatch = $('#stopwatch').find('.countup'),
+            //     $kl_vid = document.getElementById('kl_vid');
+
+            // $nav.addClass('shown')
+            // $navli.removeClass('visuallyhidden');
+            // setTimeout(function() {
+            //     $navli.addClass('fadeIn');
+            // }, 1);
+        </script>
+</body>
+</html>
